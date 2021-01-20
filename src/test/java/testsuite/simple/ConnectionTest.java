@@ -921,7 +921,6 @@ public class ConnectionTest extends BaseTestCase {
      * @throws Exception
      */
     @Test
-    @Disabled
     public void testFailoverConnection() throws Exception {
 
         if (!isServerRunningOnWindows()) { // windows sockets don't work for this test

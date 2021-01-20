@@ -9266,7 +9266,6 @@ public class StatementRegressionTest extends BaseTestCase {
      * @throws Exception
      */
     @Test
-    @Disabled
     public void testBug21876798() throws Exception {
         createTable("testBug21876798", "(tst INT, val INT)");
 
@@ -9336,7 +9335,6 @@ public class StatementRegressionTest extends BaseTestCase {
      * @throws Exception
      */
     @Test
-    @Disabled
     public void testBug78961() throws Exception {
         createProcedure("testBug78961", "(IN c1 FLOAT, IN c2 FLOAT, OUT h FLOAT, INOUT t FLOAT) BEGIN SET h = SQRT(c1 * c1 + c2 * c2); SET t = t + h; END;");
 
@@ -9911,7 +9909,6 @@ public class StatementRegressionTest extends BaseTestCase {
      * @throws Exception
      */
     @Test
-    @Disabled
     public void testBug84783() throws Exception {
         // Test using a standard connection.
         final Statement testStmt = this.conn.createStatement();
@@ -10078,7 +10075,6 @@ public class StatementRegressionTest extends BaseTestCase {
      * @throws Exception
      */
     @Test
-    @Disabled
     public void testBug78313() throws Exception {
         Connection testConn;
 
