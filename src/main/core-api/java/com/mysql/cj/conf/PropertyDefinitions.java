@@ -173,7 +173,7 @@ public class PropertyDefinitions {
     public static final Map<PropertyKey, PropertyDefinition<?>> PROPERTY_KEY_TO_PROPERTY_DEFINITION;
 
     static {
-        String NULL_LOGGER_NAME = NullLogger.class.getName();
+        String STANDARD_LOGGER_NAME = StandardLogger.class.getName();
 
         PropertyDefinition<?>[] pdefs = new PropertyDefinition<?>[] {
                 new StringPropertyDefinition(PropertyKey.USER, DEFAULT_VALUE_NULL_STRING, RUNTIME_NOT_MODIFIABLE,
@@ -714,8 +714,8 @@ public class PropertyDefinitions {
                 //
                 // CATEGORY_DEBUGING_PROFILING
                 //
-                new StringPropertyDefinition(PropertyKey.logger, NULL_LOGGER_NAME, RUNTIME_MODIFIABLE,
-                        Messages.getString("ConnectionProperties.logger", new Object[] { Log.class.getName(), NULL_LOGGER_NAME }), "0.1.0",
+                new StringPropertyDefinition(PropertyKey.logger, STANDARD_LOGGER_NAME, RUNTIME_MODIFIABLE,
+                        Messages.getString("ConnectionProperties.logger", new Object[] { Log.class.getName(), STANDARD_LOGGER_NAME }), "0.1.0",
                         CATEGORY_DEBUGING_PROFILING, 0),
 
                 new StringPropertyDefinition(PropertyKey.profilerEventHandler, com.mysql.cj.log.LoggingProfilerEventHandler.class.getName(), RUNTIME_MODIFIABLE,
